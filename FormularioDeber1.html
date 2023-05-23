@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!--Para la codificación de caracteres?-->
+    <title>Ingreso de informacion</title>
+</head>
+<body>
+<h1>Datos requeridos</h1>
+<form method="post">
+    <div>
+        <fieldset>
+        <legend>informacion personal:</legend>
+            <table>
+<!--                <thead>-->
+<!--                     <tr> tr= row→ fila-->
+<!--                         <td>Nombre</td>-->
+<!--                         <td>Apellido</td>-->
+<!--                     </tr>-->
+<!--                 </thead>-->
+                <tbody>
+                    <tr>
+                        <td><label for="nombre">Nombre:</label><br></td>
+                        <td><input type="text" id="nombre" name="nombre" maxlength="15"  required><br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="apellido">Apellido:</label><br></td>
+                        <td><input type="text" id="apellido" name="apellido" required><br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="cedula">cedula:</label><br></td>
+                        <td><input type="number" id="cedula" name="nombre" maxlength="10" required><br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="correo electronico">correo electronico:</label><br></td>
+                        <td><input type="text" id="correo electronico" name="correo electronico" required><br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pin">PIN:</label><br></td>
+                        <td><input type="password" id="pin" name="pin" maxlength="6" size="6"><br></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </fieldset>
+    </div>
+    <br>
+    <div>
+         <p>seleccione sexo:</p>
+
+        <input type="radio" id="femenino" name="fav_language" value="femenino">
+        <label for="femenino">Femenino</label><br>
+        <input type="radio" id="masculino" name="fav_language" value="masculino">
+        <label for="masculino">Masculino</label><br>
+        <input type="radio" id="otro" name="fav_language" value="otro">
+        <label for="otro">Otro</label>
+
+    </div>
+    <br>
+     <div>
+         <p>seleccione Modalidad:</p>
+
+        <input type="checkbox" id="presencial" name="presencial" value="presencial">
+        <label for="presencial">Presencial</label><br>
+        <input type="checkbox" id="virtual" name="virtual" value="virtual">
+        <label for="virtual">Virtual</label><br>
+        <input type="checkbox" id="hibrida" name="hibrida" value="hibrida">
+        <label for="hibrida">Hibrida</label>
+    </div>
+
+    <br>
+    <div>
+        <label for="semestre">Escoger el semestre actual:</label>
+        <select id="semestre" name="semestre">
+            <option value="1">Primer Semestre</option>
+            <option value="2">Segundo Semestre</option>
+            <option value="3">Tercer Semestre</option>
+            <option value="4">Cuarto Semestre</option>
+            <option value="5">Quinto Semestre</option>
+            <option value="6">Sexto Semestre</option>
+            <option value="7">Septimo Semestre</option>
+            <option value="8">Octavo Semestre</option>
+            <option value="9">Noveno Semestre</option>
+        </select>
+    </div>
+
+
+    <br>
+
+    <input type="submit" value="Enviar">
+    <br>
+
+    <div>
+
+    </div>
+</form>
+</body>
+</html>
